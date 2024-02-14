@@ -19,7 +19,7 @@ const FilterBar = ({ filter, setFilter }) => {
   // };
 
   return (
-    <div className="h-16 flex flex-row items-center gap-2 overflow-x-auto px-4 no-scrollbar border-b-2 border-neutral-300 mb-2 bg-neutral-200">
+    <div className="h-16 flex flex-row items-center gap-2 overflow-x-auto px-4 no-scrollbar border-b-2 border-neutral-300 mb-2 bg-neutral-200 text-black">
       {filters.map((filter, index) => (
         <div
           key={index}

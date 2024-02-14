@@ -1,11 +1,10 @@
 import Image from "next/image";
 
 const PropertyCard = ({ property, index }) => {
-  console.log("from property card");
   return (
     <div
       key={index}
-      className="flex flex-col w-[350px] h-[395px] border border-neutral-200 rounded relative mb-1"
+      className="flex flex-col w-[350px] h-[395px] border border-neutral-200 rounded relative mb-1 text-black"
     >
       <img
         src={"/" + property.image}
