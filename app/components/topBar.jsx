@@ -9,7 +9,7 @@ const TopBar = () => {
     console.log("handleSearch called");
   };
   return (
-    <div className="flex flex-row items-center justify-between w-full h-20 bg-green-100 gap-2">
+    <div className="flex flex-row items-center justify-between w-full h-20 bg-white gap-2">
       <div className="flex items-center pl-8 sm:pl-20 gap-4 w-full sm:w-1/2">
         <Image
           className="hidden sm:block"

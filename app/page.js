@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col bg-white">
       <TopBar />
       <FilterBar filter={filter} setFilter={setFilter} />
 

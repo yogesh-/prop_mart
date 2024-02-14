@@ -19,11 +19,11 @@ const FilterBar = ({ filter, setFilter }) => {
   // };
 
   return (
-    <div className="h-16 flex flex-row items-center gap-2 overflow-x-auto px-4 no-scrollbar">
+    <div className="h-16 flex flex-row items-center gap-2 overflow-x-auto px-4 no-scrollbar border-b-2 border-neutral-300 mb-2 bg-neutral-200">
       {filters.map((filter, index) => (
         <div
           key={index}
-          className="flex flex-row flex-nowrap items-center rounded-full h-8 border-2 border-neutral-300 pl-1 pr-6 cursor-pointer"
+          className="flex flex-row flex-nowrap items-center rounded-full h-8 border-2 border-neutral-300 pl-1 pr-6 cursor-pointer bg-white"
           style={{ width: `auto` }}
           // onClick={() => handleFilterClick(index)}
         >
