@@ -11,13 +11,19 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("api/");
-      const data = await response.json();
-      setProperties(data.data);
+      if (filter) {
+        const response = await fetch("api/?verified=true");
+        const data = await response.json();
+        setProperties(data.data);
+      } else {
+        const response = await fetch("api/");
+        const data = await response.json();
+        setProperties(data.data);
+      }
     }
 
     fetchData();
-  }, []);
+  }, [filter]);
 
   return (
     <main className="flex flex-col bg-white">
