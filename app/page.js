@@ -12,15 +12,11 @@ export default function Home() {
   useEffect(() => {
     async function fetchData() {
       if (filter) {
-        const response = await fetch(
-          "https://qojvk62gs8.execute-api.ap-south-1.amazonaws.com/test/my-fetch-resource/?verified=true"
-        );
+        const response = await fetch("api/?verified = true");
         const data = await response.json();
         setProperties(data.data);
       } else {
-        const response = await fetch(
-          "https://qojvk62gs8.execute-api.ap-south-1.amazonaws.com/test/my-fetch-resource"
-        );
+        const response = await fetch("api/");
         const data = await response.json();
         setProperties(data.data);
       }
